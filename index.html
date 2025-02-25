@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Yash.Design</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=code" />
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="Images/logo white.svg" alt="Logo" class="logo">
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="banner">
+                    <!-- Rotating Slider -->
+                    <div class="slider" style="--quantity: 10">
+                        <div class="item" style="--position: 1">
+                            <i class="fa-solid fa-code iconset"></i>
+                        </div>
+                        <div class="item" style="--position: 2">
+                            <i class="fa-brands fa-css3 iconset"></i>
+                        </div>
+                        <div class="item" style="--position: 3">
+                            <i class="fa-brands fa-node-js iconset"></i>
+                        </div>
+                        <div class="item" style="--position: 4">
+                            <i class="fa-brands fa-html5 iconset"></i>
+                        </div>
+                        <div class="item" style="--position: 5">
+                            <i class="fa-brands fa-python iconset"></i>
+                        </div>
+                        <div class="item" style="--position: 6">
+                            <i class="fa-brands fa-webflow iconset"></i>
+                        </div>
+                        <div class="item" style="--position: 7">
+                            <i class="fa-brands fa-wordpress iconset"></i>
+                        </div>
+                        <div class="item" style="--position: 8">
+                            <i class="fa-brands fa-wix iconset"></i>
+                        </div>
+                        <div class="item" style="--position: 9">
+                            <i class="fa-brands fa-figma iconset"></i>
+                        </div>
+                        <div class="item" style="--position: 10">
+                            <i class="fa-solid fa-database iconset"></i>
+                        </div>
+                    </div>
+                    
+                    <!-- Hero Content Section -->
+                    <div class="content">
+                        <h1 data-content="YASH.DESIGN">YASH.DESIGN</h1>
+                        <div class="author">
+                            <h2>Frontend Developer</h2>
+                        </div>
+                       <div class="model"></div>
+                    </div>
+                </div>
+                
+                </div>
+            </div>
+        </div>
+        <!-- ---------about-------------- -->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="Images/Myimage.jpg" alt="about-image">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p> Hi, I'm Yasoda Piyumal Manamdewage — a passionate front-end developer who 
+                            loves turning ideas into beautiful, responsive websites. With 3+ years of experience, 
+                            I craft seamless digital experiences using HTML, CSS, and JavaScript, while building stunning websites 
+                            with Webflow, WordPress, Wix, and Shopify. Whether it’s a business site, portfolio, or eCommerce store, I 
+                            focus on clean code, eye-catching design, and smooth functionality. Let’s bring your vision to life!
+                        </p>
+                        <div class="tab-titles">
+                            <div class="tab-links active-link" onclick="opentab('skills')">Skills</div>
+                            <div class="tab-links" onclick="opentab('experience')">Experience</div>
+                            <div class="tab-links" onclick="opentab('education')">Education</div>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Web Development</span><br>HTML <br>CSS <br>JavaScript <br>WordPress <br>Webflow <br>Wix <br>Shopify</li>
+                                <li><span>UI/UX Design</span><br>Designing Web/App interfaces <br>Interaction Design</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>2021 - Current</span><br>Freelance Web Developer</li>
+                                <li><span>2024 - Current</span><br>Freelance UI/UX Designer</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2025 - Freecodecamp</span><br>Responsive Web Design</li>
+                                <li><span>2025 - Google</span><br>UX Design</li>
+                                <li><span>2021 - University of Moratuwa</span><br>Web Design for Beginners</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-----------------------services-------------------->
+
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Web Development</h2>
+                        <p>I specialize in creating high-performance websites using HTML, CSS, JavaScript, 
+                            and platforms like WordPress, Webflow, Wix, and Shopify. Whether it's a business website, 
+                            portfolio, or e-commerce store, I ensure each site is responsive, fast-loading, and tailored to 
+                            your specific needs. I focus on clean, efficient code and intuitive layouts to provide a seamless 
+                            user experience across all devices.</p>
+                        <!--<a href="#">Learn More</a>-->
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-figma"></i>
+                        <h2>UI/UX Design</h2>
+                        <p>Great design is more than aesthetics—it's about creating an experience. I design intuitive, user-friendly 
+                            interfaces that connect users with your brand. From wireframes to high-fidelity prototypes, I use Figma to 
+                            transform ideas into visually engaging and functional products. My approach ensures that every design choice 
+                            enhances usability while maintaining a modern and appealing look.</p>
+                        <!--<a href="#">Learn More</a>-->
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-bars-progress"></i>
+                        <h2>Website Optimization & CMS Solutions</h2>
+                        <p>Having a website is just the start; ensuring it runs smoothly and stays up-to-date is equally important. I provide content
+                             management solutions (CMS) with platforms like WordPress, Webflow, and Shopify, making it easy for you to update content 
+                             without any coding knowledge. I also focus on website optimization, improving speed, SEO, and overall performance to help 
+                             you reach a wider audience and achieve your goals.</p>
+                        <!--<a href="#">Learn More</a>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--------------------------portfolio------------------------>
+
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="Images/Frame 103.png" alt="">
+                        <div class="layer">
+                            <h3>Web Agency</h3>
+                            <p>Developed a sleek and responsive website for a web agency using Webflow, 
+                                ensuring a seamless user experience with modern design, smooth animations, and optimized performance.
+                                </p>
+                            <a href="https://webo-design-bcf10d.webflow.io/" target="_blank">View</a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="Images/Frame 104.png" alt="">
+                        <div class="layer">
+                            <h3>Business Website</h3>
+                            <p>Created a vibrant and user-friendly website for Crabvore Restaurant using 10Web, 
+                                featuring an eye-catching design, easy navigation, and fast-loading pages to enhance the customer experience.
+                                </p>
+                            <a href="https://10web-site.ai/178/jointly-sincere-rabbit/" target="_blank">View</a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="Images/Frame 101.png" alt="">
+                        <div class="layer">
+                            <h3>Website Redesign</h3>
+                            <p>Redesigned a modern and intuitive website in Figma for a property development company in Spain, focusing on clean layouts,
+                                 user-friendly navigation, and a sleek visual style to showcase their projects effectively
+                                </p>
+                            <a href="https://www.figma.com/proto/CTxodD7JnA36f9XOqOE1us/Real-Estate-Website-Template---
+                            Web-%26-Mobile-(Community)?page-id=0%3A1&node-id=1-2&viewport=472%2C408%2C0.34&t=kI6K6r0hg7hNW6oN
+                            -1&scaling=min-zoom&content-scaling=fixed" target="_blank">View</a>
+                        </div>
+                    </div>
+                </div>
+                <!--<a href="#" class="btn">See more</a>-->
+                <div class="spacebar"></div>
+            </div>
+        </div>
+
+        <!-----------------contact---------------------->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i> 99yasodapiyumal@gmail.com</p>
+                        <p><i class="fa-solid fa-square-phone"></i> +49-17676418019</p>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/yasoda.piumal" target="_blank"><i class="fa-brands fa-facebook green"></i></a>
+                            <a href="https://www.linkedin.com/mynetwork/?skipRedirect=true" target="_blank"><i class="fa-brands fa-linkedin green"></i></a>
+                            <a href="https://www.instagram.com/md_yash99/" target="_blank"><i class="fa-brands fa-instagram green"></i></a>
+                        </div>
+                        <a href="Documents/resume.pdf" download class="btn btn2">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright <i class="fa-solid fa-copyright"></i> Yash</p>
+            </div>
+        </div>
+
+
+
+
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname){
+                for (let tablink of tablinks) {
+                    tablink.classList.remove("active-link"); 
+                    }
+                for (let tabcontent of tabcontents) {
+                    tabcontent.classList.remove("active-tab"); 
+                    }
+
+            document.getElementById(tabname).classList.add("active-tab");
+            event.currentTarget.classList.add("active-link");
+            }
+
+        </script>
+
+        <script>
+
+            var sidemenu = document.getElementById("sidemenu");
+
+            function openmenu(){
+                sidemenu.style.right = "0";
+            }
+            function closemenu(){
+                sidemenu.style.right = "-200px"
+            }
+
+
+        </script>
+
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbzLBa3Bwzm_u6uVz31GrJxiawhHjJhBrocI1f-jSRp1XrVVGNb0nd1ys3FYdE2nNLMw/exec';
+            const form = document.forms['submit-to-google-sheet'];
+            const msg = document.getElementById("msg");
+
+            form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            // Show immediate feedback while waiting for a response
+            msg.innerHTML = "Sending...";
+
+            try {
+            const response = await fetch(scriptURL, {
+                method: 'POST',
+                body: new FormData(form)
+            });
+
+            if (response.ok) {
+                msg.innerHTML = "Message Sent Successfully!";
+            } else {
+                msg.innerHTML = "Failed to send message. Please try again.";
+            }
+
+            // Clear the message after 5 seconds
+            setTimeout(() => {
+                msg.innerHTML = "";
+            }, 5000);
+
+            // Reset the form
+            form.reset();
+            } catch (error) {
+            console.error('Error!', error.message);
+            msg.innerHTML = "An error occurred. Please try again.";
+            }
+            });
+        </script>
+        <script>
+            const textElement = document.getElementById("animated-text");
+            const phrases = ["Design.", "Develop.", "Deliver."];
+            let phraseIndex = 0;
+            let charIndex = 0;
+            let isDeleting = false;
+            
+            function typeEffect() {
+                const currentPhrase = phrases[phraseIndex];
+                if (!isDeleting) {
+                    textElement.textContent = currentPhrase.substring(0, charIndex++);
+                    if (charIndex > currentPhrase.length) {
+                        isDeleting = true;
+                        setTimeout(typeEffect, 1000); // Hold before deleting
+                    } else {
+                        setTimeout(typeEffect, 100);
+                    }
+                } else {
+                    textElement.textContent = currentPhrase.substring(0, charIndex--);
+                    if (charIndex === 0) {
+                        isDeleting = false;
+                        phraseIndex = (phraseIndex + 1) % phrases.length;
+                    }
+                    setTimeout(typeEffect, 50);
+                }
+            }
+            
+            typeEffect();
+
+            const menuIcon = document.querySelector('.fa-solid');
+const navMenu = document.querySelector('nav ul');
+
+menuIcon.addEventListener('click', () => {
+    navMenu.style.right = navMenu.style.right === '0px' ? '-200px' : '0';
+});
+
+            </script>
+
+
+
+    </body>
+
+</html>
