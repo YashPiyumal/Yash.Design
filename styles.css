@@ -483,6 +483,18 @@ nav .fa-solid{
         inset: 0 0 0 0;
         transform: rotateY(calc((var(--position) - 1) * (360deg / var(--quantity)))) translateZ(100px); /* Apply rotation and 3D translation */
     }
+
+    .banner .content .author{
+        z-index: 2;
+    }
+    .banner .content .author h2{
+        color: #fff;
+        font-size: 1.2em;
+        border-left: 1px solid #fff;
+    }
+    .banner .content{
+        top: 60px;
+    }
 }
 
 #msg{
@@ -627,10 +639,18 @@ nav .fa-solid{
     .banner .content h1 {
         font-size: 3.5em;
     }
+    .banner .content h1::after {
+        position: absolute;
+        inset: 0 0 0 0;
+        content: attr(data-content);
+        z-index: 2;
+        -webkit-text-stroke: 1px #ffffff;
+        color: transparent;
+    }
 
     .banner .content h2 {
         font-size: 1.2em;
-        display: none;
+        z-index: 5;
     }
 
     .hireme {
@@ -669,10 +689,17 @@ nav .fa-solid{
     .banner .content h1 {
         font-size: 2.5em;
     }
+    .banner .content h1::after {
+        position: absolute;
+        inset: 0 0 0 0;
+        content: attr(data-content);
+        z-index: 2;
+        -webkit-text-stroke: 1px #ffffff;
+        color: transparent;
+    }
 
     .banner .content h2 {
         font-size: 1em;
-        display: none;
     }
 
     .hireme {
