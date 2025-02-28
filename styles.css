@@ -467,6 +467,22 @@ nav .fa-solid{
     .copyright{
         font-size: 14px;
     }
+    .banner.slider{
+        width: 50%;
+    }
+    @keyframes autoRunMobile {
+        from {
+            transform: perspective(600px) rotateX(-45deg) rotateY(0deg);
+        }
+        to {
+            transform: perspective(600px) rotateX(-45deg) rotateY(360deg);
+        }
+    }
+    .banner .slider .item {
+        position: absolute;
+        inset: 0 0 0 0;
+        transform: rotateY(calc((var(--position) - 1) * (360deg / var(--quantity)))) translateZ(100px); /* Apply rotation and 3D translation */
+    }
 }
 
 #msg{
@@ -512,7 +528,7 @@ nav .fa-solid{
 .banner .slider .item {
     position: absolute;
     inset: 0 0 0 0;
-    transform: rotateY(calc((var(--position) - 1) * (360deg / var(--quantity)))) translateZ(400px); /* Apply rotation and 3D translation */
+    transform: rotateY(calc((var(--position) - 1) * (360deg / var(--quantity)))) translateZ(300px); /* Apply rotation and 3D translation */
 }
 
 .banner .slider .item i.iconset {
@@ -636,9 +652,20 @@ nav .fa-solid{
     .banner .content .model {
         height: 40vh;
     }
+    .banner .slider{
+        width: 80%;
+    }
+    
 }
 
 @media (max-width: 480px) {
+
+    #header{
+        height: 75vh;
+    }
+    .banner{
+        height: 65vh;
+    }
     .banner .content h1 {
         font-size: 2.5em;
     }
