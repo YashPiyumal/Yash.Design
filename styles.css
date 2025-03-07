@@ -474,6 +474,26 @@ nav .fa-solid{
         cursor: pointer;
 
     }
+    .background {
+        height: 55vh; /* Adjust hero section height */
+    }
+
+    spline-viewer {
+        width: 140%;  /* Widen to crop edges */
+        left: -20%;   /* Adjust position to center */
+    }
+
+    .content h1 {
+        font-size: 2.2rem; /* Scale down heading */
+    }
+
+    .content h2 {
+        font-size: 1.3rem;
+    }
+
+    .content {
+        padding: 15px;
+    }
     .sub-title{
         font-size: 40px;
     }
