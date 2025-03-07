@@ -437,9 +437,6 @@ nav .fa-solid{
 /*------------------small screen css----------------*/
 
 @media only screen and (max-width: 600px){
-    #header{
-        background-image: url(Images/digital-8280769.jpg);
-    }
     .header-text{
         margin-top: 100%;
         font-size: 16px;
@@ -475,20 +472,32 @@ nav .fa-solid{
 
     }
     .background {
-        height: 55vh; /* Adjust hero section height */
+        height: 50vh; /* Adjust height to fit better */
+        overflow: hidden; /* Prevents unwanted overflow */
     }
 
     spline-viewer {
-        width: 140%;  /* Widen to crop edges */
-        left: -20%;   /* Adjust position to center */
+        width: 140%;  /* Expand to crop edges */
+        height: 100%;  /* Keep full coverage */
+        left: -20%;   /* Center by shifting */
+        transform: scale(1.2); /* Zoom in slightly to hide logo */
+        pointer-events: none; /* Prevents interaction with the scene */
+    }
+
+    .content {
+        position: absolute;
+        top: 20%; /* Move content up */
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
     }
 
     .content h1 {
-        font-size: 2.2rem; /* Scale down heading */
+        font-size: 2.5rem; /* Adjust for better visibility */
     }
 
     .content h2 {
-        font-size: 1.3rem;
+        font-size: 1.5rem;
     }
 
     .content {
