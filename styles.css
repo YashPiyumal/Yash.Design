@@ -472,16 +472,16 @@ nav .fa-solid{
 
     }
     .background {
-        height: 50vh; /* Adjust height to fit better */
+        height: 80vh; /* Adjust height to fit better */
         overflow: hidden; /* Prevents unwanted overflow */
     }
 
     spline-viewer {
         width: 140%;  /* Expand to crop edges */
-        height: 100%;  /* Keep full coverage */
+        height: 140%;  /* Keep full coverage */
         left: -20%;   /* Center by shifting */
         transform: scale(1.2); /* Zoom in slightly to hide logo */
-        pointer-events: none; /* Prevents interaction with the scene */
+         /* Prevents interaction with the scene */
     }
 
     .content {
